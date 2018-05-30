@@ -1,4 +1,4 @@
-#Auto Highlight Generation for Adult Sports (Soccer)
+# Auto Highlight Generation for Adult Sports (Soccer)
 
 Each week I play in a competitive adult small sided soccer league. Not only does the soccer provide a good workout and a competitive outlet, it also provides a strong social network. Each week we chat about the highlights from the week before. These conversations are based solely on our memories from the game. So, I thought, how great would it be to augment these conversations with visuals, namely a highlight reel.
 
@@ -10,7 +10,7 @@ Tasked with creating a way to automatically generate highlight reels for only a 
 
 While there are still issues with this system, namely misclassifications by MTurk annotators, it is an effective way to pare down hours of a footage into a highlight reel. Here, you can see the first test of the system. Two cameras (goPro) filmed a 50 minute game (~120 minutes total footage). Then, the raw footage was fed into the pipeline producing the following video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hY-mI8VTfuw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[![Video](yt.png)](https://www.youtube.com/embed/hY-mI8VTfuw?rel=0)
 
 #### Future:
 
@@ -27,7 +27,7 @@ Additionally, this same core framework could be easily applied to other, potenti
 
 #### Technical info:
 
-![goal](../assets/images/project-images/highlights/goal.gif)
+![goal](goal.gif)
 
 Briefly, I use the openCV library to look for camera shakes. This is accomplished by tracking a grid of image features and watching how they change position frame to frame using the Optical Flow library (See Above). Total changes above a certain threshold trigger a Shake Event.
 
